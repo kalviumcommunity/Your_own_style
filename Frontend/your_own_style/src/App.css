@@ -1,0 +1,55 @@
+.logo{
+  width: '100px';
+  height: 'auto';
+  position: relative;
+  left: 50px;
+}
+/* Navbar.css */
+
+.navbar {
+  background-color: black;
+  padding: px 0;
+  position: fixed;
+  bottom: 580px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1600px;
+
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px; /* Adjust the width of the logo */
+  height: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  right: 540px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item a:hover {
+  color: lightgray;
+}
