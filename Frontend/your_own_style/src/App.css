@@ -51,5 +51,10 @@
 }
 
 .nav-item a:hover {
+
   color: lightgray;
+  
+}
+.text{
+  font-size: large;
 }

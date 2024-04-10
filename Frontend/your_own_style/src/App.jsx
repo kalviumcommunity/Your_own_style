@@ -1,24 +1,31 @@
+// App.js
 
 import React from 'react';
-import './App.css'
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import Forms from './components/Forms';
+
+
+
 
 function App() {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <img src="https://freedesignfile.com/upload/2017/10/Fashion-women-sign-with-logo-vectors-set-11.jpg" alt="Logo" className="logo" />
-        <ul className="nav-menu">
-          <li className="nav-item"><a href="#">Home</a></li>
-          <li className="nav-item"><a href="#">About</a></li>
-          <li className="nav-item"><a href="#">Register</a></li>
-          <li className="nav-item"><a href="#">Contact</a></li>
-          <li className="nav-item"><a href="#">Feedback</a></li>
-        </ul>
-      </div>
-    </nav>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Navbar/>} />
+        <Route path="/about" element={<AboutUs/>} />
+        <Route path='/Forms' element={<Forms/>} />
+
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
 
 
