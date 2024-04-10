@@ -19,7 +19,9 @@ function Navbar() {
 
         </ul>
       </div>
-      <div>
+      
+      <div className='img'>
+        
 
       </div>
     </nav>
