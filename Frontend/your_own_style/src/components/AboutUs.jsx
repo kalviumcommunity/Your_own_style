@@ -6,8 +6,9 @@ import '../App.css';
 function AboutUs(){
   return(
     <div>
-      Hi
+      
     </div>
+   
   )
 }
 
