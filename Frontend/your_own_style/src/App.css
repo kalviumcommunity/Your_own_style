@@ -11,17 +11,11 @@
   padding: px 0;
   position: fixed;
   bottom: 615px;
+  z-index: 1000;
   
 }
-.bgimg{
-  position: fixed;
-  bottom: 30px;
-  height: 400px;
-  width: 1600px;
-  display: flex;
-  justify-content: center;
 
-}
+
 .navbar-container {
   display: flex;
   align-items: center;
@@ -52,7 +46,7 @@
   color: white;
   text-decoration: none;
   position: relative;
-  right: 540px;
+  right: 650px;
   font-size: 30px;
   display: flex;
   justify-content: space-around;
@@ -65,6 +59,7 @@
 }
 .text{
   font-size: large;
+  margin-left: 30px;
 }
 .img{
   position: relative;
@@ -72,17 +67,235 @@
   height: 00px;
 }
 
-.img {
-  /* Set the background image */
- 
-  /* Set background size to cover entire div */
-  background-size: cover;
-
-  /* Center the background image */
-  background-position: center;
-
-  /* Add more CSS properties as needed */
-  /* For example: */
-  /* height: 100vh; */
-  /* width: 100%; */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 250px;
 }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  position: relative;
+  right: 80px;
+
+}
+
+.circle-image {
+  width: 250px; /* Adjust image width */
+  height: 250px; /* Adjust image height */
+  border-radius: 50%;
+  margin: 50px; /* Adjust margin */
+}
+.container {
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+/* SignupForm.css */
+
+/* Container */
+/* SignupForm.css */
+
+/* Container */
+.containers {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  left: 570px;
+}
+
+/* Header */
+.header {
+  background-color: #1b7fe2;
+  padding: 20px;
+  border-radius: 8px;
+  animation: slideIn 0.5s ease;
+}
+.wel{
+  position: relative;
+  left: 590px;
+ 
+}
+
+.text2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.underline {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+.input img {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease;
+}
+
+/* Forgot Password */
+.forgotpassword {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.forgotpassword span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Submit Container */
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+  animation: slideIn 0.5s ease;
+}
+
+.submit {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  animation: slideIn 0.5s ease;
+}
+
+.submit.gray {
+  background-color: #6c757d;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circle-image:hover {
+  transform: scale(1.1);
+}
+
+.image-label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.label-span {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.image-label:hover {
+  color: #ff6f61;
+}
+
+.text-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle-image:hover .text-popup {
+  display: block;
+}
+

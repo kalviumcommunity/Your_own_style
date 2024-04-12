@@ -6,7 +6,7 @@ import '../App.css';
 function Forms(){
   return(
     <div>
-      Hi
+      <h1>forms</h1>
     </div>
   )
 }
