@@ -7,6 +7,11 @@ function Signup() {
 
   return (
     <div>
+        <div className='bgimg'>
+        <img src="https://wallpaperboat.com/wp-content/uploads/2019/11/boutique-11.jpg" alt="" />
+
+        </div>
+       
       <h2 className='wel'>WELCOME TO YOUR_OWN_STYLE</h2>
       <div className='containers'>
         <div className='header'>
@@ -39,3 +44,4 @@ function Signup() {
 }
 
 export default Signup;
+

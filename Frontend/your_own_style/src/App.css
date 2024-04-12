@@ -12,8 +12,22 @@
   position: fixed;
   bottom: 615px;
   z-index: 1000;
-  
+
 }
+
+.bgimg {
+  position: fixed;
+  bottom: 750px;
+  right: 1700px;
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/11/boutique-11.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image horizontally and vertically */
+  width: 0px; /* Set the width to fill the entire viewport */
+  height: 0px; /* Set the height to fill the entire viewport */
+}
+
+/* Add more CSS rules as needed */
+
 
 
 .navbar-container {
@@ -72,7 +86,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  left: 250px;
+  left: 390px;
 }
 
 .row {
@@ -119,6 +133,7 @@
 .wel{
   position: relative;
   left: 590px;
+  color: pink;
  
 }
 
