@@ -11,7 +11,6 @@ function Navbar() {
           <li className="nav-item"><Link to="/home">Home</Link></li>
           <li className="nav-item"><Link to="/about">About</Link></li>
           <li className="nav-item"><Link to="/forms">Forms</Link></li>
-          <li className="nav-item"><Link to="/signup">Sign Up</Link></li> {/* Link to the signup page */}
         </ul>
       </div>
     </nav>
