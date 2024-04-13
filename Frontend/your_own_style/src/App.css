@@ -12,8 +12,22 @@
   position: fixed;
   bottom: 615px;
   z-index: 1000;
-  
+
 }
+
+.bgimg {
+  position: fixed;
+  bottom: 750px;
+  right: 1700px;
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/11/boutique-11.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image horizontally and vertically */
+  width: 0px; /* Set the width to fill the entire viewport */
+  height: 0px; /* Set the height to fill the entire viewport */
+}
+
+/* Add more CSS rules as needed */
+
 
 
 .navbar-container {
@@ -72,7 +86,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  left: 250px;
+  left: 390px;
 }
 
 .row {
@@ -116,11 +130,7 @@
   border-radius: 8px;
   animation: slideIn 0.5s ease;
 }
-.wel{
-  position: relative;
-  left: 590px;
- 
-}
+
 
 .text2 {
   font-size: 24px;
@@ -172,13 +182,37 @@ input[type="password"] {
   color: #007bff;
   cursor: pointer;
 }
+.containers{
+  position: relative;
+  left: 510px;
+}
+
+.wel {
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.wel.show {
+  opacity: 1;
+  transform: rotate(0);
+}
+.wel{
+  position: relative;
+  left: 530px;
+  color: pink;
+  font-size: 40px;
+ 
+}
 
 /* Submit Container */
 .submit-container {
   display: flex;
   justify-content: space-between;
   animation: slideIn 0.5s ease;
+ 
 }
+
 
 .submit {
   cursor: pointer;
@@ -189,6 +223,7 @@ input[type="password"] {
   background-color: #007bff;
   transition: background-color 0.3s ease;
   animation: slideIn 0.5s ease;
+
 }
 
 .submit.gray {
@@ -298,4 +333,6 @@ input[type="password"] {
 .circle-image:hover .text-popup {
   display: block;
 }
+
+
 
