@@ -4,13 +4,15 @@ import '../App.css';
 import Navbar from './Navbar';
 
 
-function Forms(){
+function Top(){
   return(
     <div>
       <Navbar />
-      <h1>forms</h1>
+      <h1>About us</h1>
+
     </div>
+   
   )
 }
 
-export default Forms
+export default Top;

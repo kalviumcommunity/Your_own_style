@@ -19,6 +19,8 @@ function App() {
         <Route path="/about" element={<AboutUs/>} />
         <Route path='/Forms' element={<Forms/>} />
         <Route path='/' element={<Signup/>}></Route>
+      
+
 
       </Routes>
     </Router>
