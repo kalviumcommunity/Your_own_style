@@ -107,6 +107,8 @@
 .container {
   max-width: 1200px; /* Adjust maximum width as needed */
   margin: 0 auto; /* Center the container horizontally */
+
+ 
 }
 /* SignupForm.css */
 
@@ -333,6 +335,94 @@ input[type="password"] {
 .circle-image:hover .text-popup {
   display: block;
 }
+ 
+/* tops page */
+.bg{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  right: 200px;
+  
+  
+}
+.bg2{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 1100px;
+  top: 100px;
+}
+.container {
+  position: relative;
+  top: 150px;
+  
+}
+
+
+.content {
+  flex: 1; /* Takes up remaining space */
+  /* display: flex; */
+  /* flex-direction: column; */
+   /* Aligns content to the right */
+  
+   
+
+}
+
+
+.text {
+  text-align: right;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.text h2 {
+  font-size: 24px;
+}
+
+.text p {
+  font-size: 16px;
+}
+.para{
+  display: flex;
+  position: relative;
+  left: 50px;
+}
+.tit{
+  position: relative;
+  bottom: 50px;
+  left: 400px;
+}
+.fullcont{
+  position: relative;
+  bottom: 110px;
+}
+.bg3{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 40px;
+}
+.tit1{
+  text-align: center;
+  position: relative;
+  left: 300px;
+}
+.para2{
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  position: relative;
+  bottom: 170px;
+}
+.h2{
+  position: relative;
+  bottom: 60px;
+  left: 700px;
+
+}
+
+
+
 
 
 
