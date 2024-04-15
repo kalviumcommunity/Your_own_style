@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import Navbar from './Navbar';
+import image from '../assets/image.jpeg'
 
 function Home() {
   return (
@@ -14,8 +15,8 @@ function Home() {
           <div className="row">
             <Link to="/top" className="image-link">
               <div className="image-wrapper">
-                <img src="https://images-static.cloudtailor.com/categories/dress.webp" alt="Casual Wear" className="circle-image" />
-                <div className="image-label">Top</div>
+                <img src={image} alt="Casual Wear" className="circle-image" />
+                <div className="image-label">Blouse</div>
               </div>
             </Link>
             <Link to="/party-wear" className="image-link">
@@ -40,7 +41,7 @@ function Home() {
             </Link>
             <Link to="/blouse" className="image-link">
               <div className="image-wrapper">
-                <img src="https://images-static.cloudtailor.com/categories/blouse.webp" alt="Blouse" className="circle-image" />
+                <img src="https://images-static.cloudtailor.com/categories/dress.webp " alt="Blouse" className="circle-image" />
                 <div className="image-label">Blouse</div>
               </div>
             </Link>
