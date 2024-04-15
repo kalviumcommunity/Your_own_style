@@ -341,9 +341,7 @@ input[type="password"] {
   height: 300px;
   width: 300px;
   position: relative;
-  right: 200px;
-  
-  
+  right: 200px; 
 }
 .bg2{
   height: 300px;
@@ -394,7 +392,7 @@ input[type="password"] {
 }
 .fullcont{
   position: relative;
-  bottom: 110px;
+  bottom: 160px;
 }
 .bg3{
   height: 300px;
@@ -420,6 +418,51 @@ input[type="password"] {
   left: 700px;
 
 }
+
+/* Add this to your CSS file */
+.consultation-button {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 20px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  margin-top: 100px; /* Add some space above the button */
+  position: relative;
+  right: 600px;
+  top: 80px;
+  
+}
+
+.consultation-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+.consultation-button2 {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 20px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  margin-top: 100px; /* Add some space above the button */
+  position: relative;
+  right: 240px;
+  top: 30px;
+  
+  
+}
+
+.consultation-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  
+}
+
+
+
 
 
 
