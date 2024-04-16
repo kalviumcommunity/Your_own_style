@@ -1,24 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import Navbar from './Navbar';
-import Aari from '../assets/Aari.jpeg';
+import aari from '../assets/aari.jpeg';
 import Outfits from '../assets/Outfits.jpeg';
 import boatneck from '../assets/boatneck.jpeg';
+import Modal from './Modal'; // Import the Modal component
 
 function Top() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <Navbar />
       <div className='container'>
         <div className='cover'>
-          <img src={Aari} alt="" className='bg' />
+          <img src={aari} alt="" className='bg' />
+          <h1 className='blouse'>Blouse</h1>
+          <h2 className='blo-text'>Get the perfect blouse for all occasions</h2>
         </div>
     
         <div className='content'>
           <img src={Outfits} alt="" className='bg2' />
           <div className='fullcont'>
             <div className='para'>
-              <h2 className='tit'>Puff Blouse</h2>
+              <h2 className='tit'> Puff Blouse</h2>
               <p>
                 A buff blouse is a stylish top in a soft, neutral color that looks like the shade of buff leather. <br />
                 It's versatile, meaning it can be worn for different types of events. <br />
@@ -26,7 +39,7 @@ function Top() {
                 Whether you're going for a casual or formal look, a buff blouse adds a touch of class and comfort to your outfit. <br />
                 It's a classic choice that never goes out of style, perfect for any occasion where you want to look chic and put-together.
               </p>
-              <button className="consultation-button">Book Consultation</button>
+              <button className="consultation-button" onClick={handleOpenModal}>Book Consultation</button>
             </div>
           </div>
         </div>
@@ -41,14 +54,14 @@ function Top() {
                 Its timeless design makes it a wardrobe essential for classic and modern fashion statements. <br />
                 It highlights the collarbones and shoulders, offering an elegant and versatile look suitable for various occasions.
               </p>
-              <button className="consultation-button2"> Book Consultation</button>
+              <button className="consultation-button2" onClick={handleOpenModal}>Book Consultation</button>
             </div>
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 }
 
 export default Top;
-

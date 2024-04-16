@@ -7,6 +7,8 @@ import AboutUs from './components/AboutUs';
 import Forms from './components/Forms';
 import Signup from './components/Signup';
 import Top from './components/top';
+import Modal from './components/Modal';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home/>} />
         <Route path='/top' element={<Top/>}/>
+        <Route path='/Modal'element={<Modal/>}/>
         <Route path="/about" element={<AboutUs/>} />
         <Route path='/Forms' element={<Forms/>} />
         <Route path='/' element={<Signup/>}></Route>

@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Navbar from './Navbar';
 import image from '../assets/image.jpeg'
+import partywear from '../assets/partywear.jpeg'
+import skirts from '../assets/skirts.jpeg'
+
+
 
 function Home() {
   return (
@@ -22,13 +26,13 @@ function Home() {
             <Link to="/party-wear" className="image-link">
               <div className="image-wrapper">
                 <img src="https://images-static.cloudtailor.com/collections/Ethnic.webp" alt="Party Wear" className="circle-image" />
-                <div className="image-label">Party Wear</div>
+                <div className="image-label">Occasion</div>
               </div>
             </Link>
             <Link to="/tops" className="image-link">
               <div className="image-wrapper">
                 <img src="https://images-static.cloudtailor.com/collections/Casual.webp" alt="Tops" className="circle-image" />
-                <div className="image-label">Tops</div>
+                <div className="image-label">Casual</div>
               </div>
             </Link>
           </div>
@@ -41,14 +45,14 @@ function Home() {
             </Link>
             <Link to="/blouse" className="image-link">
               <div className="image-wrapper">
-                <img src="https://images-static.cloudtailor.com/categories/dress.webp " alt="Blouse" className="circle-image" />
-                <div className="image-label">Blouse</div>
+                <img src={skirts} alt="Blouse" className="circle-image" />
+                <div className="image-label">Skirts and pants</div>
               </div>
             </Link>
             <Link to="/more-tops" className="image-link">
               <div className="image-wrapper">
-                <img src="https://images-static.cloudtailor.com/categories/top.webp" alt="More Tops" className="circle-image" />
-                <div className="image-label">More Tops</div>
+                <img src={partywear} alt="More Tops" className="circle-image" />
+                <div className="image-label">Party wear</div>
               </div>
             </Link>
           </div>

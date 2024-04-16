@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1>navbar page</h1>
       <div className="navbar-container">
         <img src="https://freedesignfile.com/upload/2017/10/Fashion-women-sign-with-logo-vectors-set-11.jpg" alt="Logo" className="logo" />
         <ul className="nav-menu">
@@ -18,4 +18,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
