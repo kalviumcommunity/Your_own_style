@@ -1,0 +1,26 @@
+.lehenga{
+    height: 300px;
+    margin-top: 500px;
+
+}
+.leh2{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    right: 260px; 
+    bottom: 450px;
+    border-radius: 40%;
+
+}
+.oc{
+    height: 300px;
+    
+}
+.cover2{
+    background-color: rgb(159, 151, 137);
+    height: 350px;
+    width: 99.10vw;
+    position: relative;
+    background-repeat: no-repeat;
+   
+  }
