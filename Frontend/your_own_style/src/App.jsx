@@ -8,6 +8,7 @@ import Forms from './components/Forms';
 import Signup from './components/Signup';
 import Top from './components/top';
 import Modal from './components/Modal';
+import Occasion from './components/Occasion';
 
 
 
@@ -24,6 +25,8 @@ function App() {
         <Route path="/about" element={<AboutUs/>} />
         <Route path='/Forms' element={<Forms/>} />
         <Route path='/' element={<Signup/>}></Route>
+        <Route path='/Occasion'  element={<Occasion />}/>
+     
       
 
 

@@ -387,6 +387,7 @@ input[type="password"] {
   display: flex;
   position: relative;
   left: 50px;
+  color: rgb(214, 7, 90);
 }
 .tit{
   position: relative;
@@ -407,6 +408,7 @@ input[type="password"] {
   text-align: center;
   position: relative;
   left: 300px;
+  
 }
 .para2{
   display: flex;
@@ -414,6 +416,8 @@ input[type="password"] {
   margin-left: 30px;
   position: relative;
   bottom: 170px;
+  font-family: sans-serif;
+  color: rgb(89, 15, 193);
 }
 .h2{
   position: relative;
@@ -466,7 +470,7 @@ input[type="password"] {
 .cover{
   background-color: rgb(159, 151, 137);
   height: 350px;
-  width: 106.2vw;
+  width: 106.1vw;
   position: relative;
   left: 100px;
   background-repeat: no-repeat;
@@ -543,9 +547,20 @@ button:hover {
 
 .blo-text{
      margin-left: 800px;
-     margin-bottom: 600px;
-}
+    position: relative;
+    bottom: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 7, 90);
 
+}
+.blouse{
+    margin-left: 800px;
+    position: relative;
+    bottom: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 7, 90);
+
+}
 
 
 
