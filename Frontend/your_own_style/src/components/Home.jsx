@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <h1>Hellooo</h1>
+    
       <div className="container">
         <div className="image-container">
           
@@ -23,7 +23,7 @@ function Home() {
                 <div className="image-label">Blouse</div>
               </div>
             </Link>
-            <Link to="/party-wear" className="image-link">
+            <Link to="/Occasion" className="image-link">
               <div className="image-wrapper">
                 <img src="https://images-static.cloudtailor.com/collections/Ethnic.webp" alt="Party Wear" className="circle-image" />
                 <div className="image-label">Occasion</div>
