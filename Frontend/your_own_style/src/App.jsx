@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 import Top from './components/top';
 import Modal from './components/Modal';
 import Occasion from './components/Occasion';
+import Landingpg from './components/Landingpg';
 
 
 
@@ -16,22 +17,24 @@ import Occasion from './components/Occasion';
 
 function App() {
   return (
-    <Router>
+    // <Router>
 
-      <Routes>
-        <Route path="/home" element={<Home/>} />
-        <Route path='/top' element={<Top/>}/>
-        <Route path='/Modal'element={<Modal/>}/>
-        <Route path="/about" element={<AboutUs/>} />
-        <Route path='/Forms' element={<Forms/>} />
-        <Route path='/' element={<Signup/>}></Route>
-        <Route path='/Occasion'  element={<Occasion />}/>
+    //   <Routes>
+    //     <Route path="/home" element={<Home/>} />
+    //     <Route path='/top' element={<Top/>}/>
+    //     <Route path='/Modal'element={<Modal/>}/>
+    //     <Route path="/about" element={<AboutUs/>} />
+    //     <Route path='/Forms' element={<Forms/>} />
+    //     <Route path='/' element={<Signup/>}></Route>
+    //     <Route path='/Occasion'  element={<Occasion />}/>
+        
      
       
 
 
-      </Routes>
-    </Router>
+    //   </Routes>
+    // </Router>
+    <Landingpg/>
   );
 }
 
