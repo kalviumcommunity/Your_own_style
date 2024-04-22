@@ -1,17 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
+import logo from '../assets/logo.png';
+import Vector from '../assets/Vector.png'
+import contact from '../assets/contact.png'
 
 function Navbar() {
   return (
     <nav className="navbar">
+      
+     
+      
       <div className="navbar-container">
-        <img src="https://freedesignfile.com/upload/2017/10/Fashion-women-sign-with-logo-vectors-set-11.jpg" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
         <ul className="nav-menu">
-          <li className="nav-item"><Link to="/home">Home</Link></li>
-          <li className="nav-item"><Link to="/about">About</Link></li>
-          <li className="nav-item"><Link to="/forms">Forms</Link></li>
+          <li>New</li>
+          <li>Tops</li>
+          <li>Bottoms</li>
+          <li>Kids</li>
+          <li>Accessories</li>
+          <li>Collections</li>
+          <li>Sale</li>
         </ul>
+        <img src={Vector} alt="Logo" className="vector" />
+        <img src={contact} alt="" />
       </div>
     </nav>
   );

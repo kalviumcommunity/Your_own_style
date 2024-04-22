@@ -13,15 +13,16 @@ function Occasion(){
   return(
     <div>
       <Navbar />
-      <div className='cover2'>
+      <div>
         <div>
+        <img src={lehenga2} alt="" className='leh2' />
+
+        </div>
+        
         <img src={Lehenga} alt="" className='lehenga'/>
-
-          <img src={occasion} alt=""  className='oc'/>
+        <img src={occasion} alt=""  className='oc'/>
+        
       
-
-      <img src={lehenga2} alt="" className='leh2' />
-      </div>
 
 
       </div>

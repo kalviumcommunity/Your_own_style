@@ -1,0 +1,11 @@
+#land{
+    background-image: url("../assets/BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.9vw;
+    height: 120vh;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
