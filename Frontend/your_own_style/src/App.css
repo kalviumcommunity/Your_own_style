@@ -1,0 +1,566 @@
+.logo{
+  width: '100px';
+  height: 'auto';
+  position: relative;
+  left: 50px;
+}
+/* Navbar.css */
+
+.navbar {
+  background-color: black;
+  padding: px 0;
+  position: fixed;
+  bottom: 615px;
+  z-index: 1000;
+
+}
+
+.bgimg {
+  position: fixed;
+  bottom: 750px;
+  right: 1700px;
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/11/boutique-11.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image horizontally and vertically */
+  width: 0px; /* Set the width to fill the entire viewport */
+  height: 0px; /* Set the height to fill the entire viewport */
+}
+
+/* Add more CSS rules as needed */
+
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px; /* Adjust the width of the logo */
+  height: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  right: 650px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item a:hover {
+
+  color: lightgray;
+  
+}
+.text{
+  font-size: large;
+  margin-left: 30px;
+}
+.img{
+  position: relative;
+  top: 1000px;
+  height: 00px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 390px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  position: relative;
+  right: 80px;
+
+}
+
+.circle-image {
+  width: 250px; /* Adjust image width */
+  height: 250px; /* Adjust image height */
+  border-radius: 50%;
+  margin: 50px; /* Adjust margin */
+}
+.container {
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+
+ 
+}
+
+/* SignupForm.css */
+
+/* Container */
+/* SignupForm.css */
+
+/* Container */
+.containers {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  left: 570px;
+}
+
+/* Header */
+.header {
+  background-color: #1b7fe2;
+  padding: 20px;
+  border-radius: 8px;
+  animation: slideIn 0.5s ease;
+}
+
+
+.text2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.underline {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+.input img {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease;
+}
+
+/* Forgot Password */
+.forgotpassword {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.forgotpassword span {
+  color: #007bff;
+  cursor: pointer;
+}
+.containers{
+  position: relative;
+  left: 510px;
+}
+
+.wel {
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.wel.show {
+  opacity: 1;
+  transform: rotate(0);
+}
+.wel{
+  position: relative;
+  left: 530px;
+  color: pink;
+  font-size: 40px;
+ 
+}
+
+/* Submit Container */
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+  animation: slideIn 0.5s ease;
+ 
+}
+
+
+.submit {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  animation: slideIn 0.5s ease;
+
+}
+
+.submit.gray {
+  background-color: #6c757d;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circle-image:hover {
+  transform: scale(1.1);
+}
+
+.image-label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.label-span {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.image-label:hover {
+  color: #ff6f61;
+}
+
+.text-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle-image:hover .text-popup {
+  display: block;
+}
+ 
+/* tops page */
+.bg{
+  height: 350px;
+  width: 350px;
+  position: relative;
+  left: 300px; 
+  top: 2.2px;
+  border-radius: 40%;
+  
+
+}
+.bg2{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 1100px;
+  top: 100px;
+}
+.container {
+  position: relative;
+  top: 150px;
+  
+}
+
+
+.content {
+  flex: 1; /* Takes up remaining space */
+  /* display: flex; */
+  /* flex-direction: column; */
+   /* Aligns content to the right */
+
+}
+
+
+.text {
+  text-align: right;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.text h2 {
+  font-size: 24px;
+}
+
+.text p {
+  font-size: 16px;
+}
+.para{
+  display: flex;
+  position: relative;
+  left: 50px;
+  color: rgb(214, 7, 90);
+}
+.tit{
+  position: relative;
+  bottom: 50px;
+  left: 400px;
+}
+.fullcont{
+  position: relative;
+  bottom: 160px;
+}
+.bg3{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 40px;
+}
+.tit1{
+  text-align: center;
+  position: relative;
+  left: 300px;
+  
+}
+.para2{
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  position: relative;
+  bottom: 170px;
+  font-family: sans-serif;
+  color: rgb(89, 15, 193);
+}
+.h2{
+  position: relative;
+  bottom: 60px;
+  left: 700px;
+
+}
+
+/* Add this to your CSS file */
+.consultation-button {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 20px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  margin-top: 100px; /* Add some space above the button */
+  position: relative;
+  right: 600px;
+  top: 80px;
+  
+}
+
+.consultation-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+.consultation-button2 {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 20px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  margin-top: 100px; /* Add some space above the button */
+  position: relative;
+  right: 240px;
+  top: 30px;
+  
+  
+}
+
+.consultation-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  
+}
+.cover{
+  background-color: rgb(159, 151, 137);
+  height: 350px;
+  width: 106.1vw;
+  position: relative;
+  left: 100px;
+  background-repeat: no-repeat;
+ 
+}
+
+
+/* Modal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+  border: none;
+}
+
+.form-group small {
+  color: #888;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: green;
+  cursor: pointer;
+}
+
+.close-btn {
+  margin-left: 10px;
+  background-color: #dc3545; /* Red color for close button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.blo-text{
+     margin-left: 800px;
+    position: relative;
+    bottom: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 7, 90);
+
+}
+.blouse{
+    margin-left: 800px;
+    position: relative;
+    bottom: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 7, 90);
+
+}
+
+
+
