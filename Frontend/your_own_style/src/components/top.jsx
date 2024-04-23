@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import Navbar from './Navbar';
-import aari from '../assets/aari.jpeg';
+import Aari from '../assets/Aari.jpeg';
 import Outfits from '../assets/Outfits.jpeg';
 import boatneck from '../assets/boatneck.jpeg';
 import Modal from './Modal'; // Import the Modal component
@@ -22,7 +22,7 @@ function Top() {
       <Navbar />
       <div className='container'>
         <div className='cover'>
-          <img src={aari} alt="" className='bg' />
+          <img src={Aari} alt="" className='bg' />
           <h1 className='blouse'>Blouse</h1>
           <h2 className='blo-text'>Get the perfect blouse for all occasions</h2>
         </div>
