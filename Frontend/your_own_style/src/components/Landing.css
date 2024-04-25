@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 850px;
+    
   }
   
   .brand-logo {
@@ -24,4 +24,55 @@
     background-color: white;
     padding: 5px; /* Adjust padding as needed */
   }
+  .sb_footer-below-links{
+    font-size: 100px;
+  }
+
+
+.section-padding{
+    padding: 4rem 4rem;
+}
+.footer{
+    background-color: gainsboro; 
+    height: 50vh;
+
+}
+
+.title{
+    margin-left: 200px;
+    padding-top: 60px;
+    height: 30vh;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-style: oblique;
+   
+
+}
+
+
+.form-group {
+    display: flex;
+  }
+  
+  .form-control {
+    margin-left: 190px;
+    padding: 10px 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px; 
+  }
+
+  
+  .btn-primary {
+   
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+
   
