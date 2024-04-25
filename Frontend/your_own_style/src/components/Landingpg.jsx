@@ -5,6 +5,11 @@ import fabindia from '../assets/fabindia.png';
 import siyaramlogo from '../assets/siyaramlogo.png';
 import raymond from '../assets/raymond.png';
 import Frame from '../assets/Frame 43.png';
+import casual3 from '../assets/casual3.jpeg'
+import occasion from '../assets/occasion.jpeg'
+import redsaree from '../assets/red saree.webp'
+import casualimage2 from '../assets/casualimage2.jpg'
+import Frame3 from '../assets/Frame3.png'
 function Landingpg() {
   return (
     <>
@@ -16,6 +21,35 @@ function Landingpg() {
           <img src={siyaramlogo} alt="Siyaram" className="brand-logo-white-bg" />
           <img src={raymond} alt="Raymond" className="brand-logo" />
         </div>
+
+        <div className='para'>
+          <p>
+          Your_own_style, is a tailoring platform designed to cater to your unique fashion <br />With an array of brands like Fabindia, Siyaram, and Raymond, along with a <br />diverse selection of clothing options for various occasions, it offers personalized <br />style solutions.  Subscribe to the newsletter for the latest updates and trends.</p>
+          <button className="shop-now-button">Shop Now</button>
+        </div>
+
+        <div className='images'>
+          <img src={casual3} alt="" className='img1' />
+          
+          <img src={casualimage2} alt="" className='img4'/>
+       
+       
+          
+          <img src={occasion} alt="" className='img2'/>
+        
+         
+         
+
+          <img src={redsaree} alt="" className='img3'/>
+
+         
+     
+        </div>
+
+        <div>
+          <img src={Frame3} alt="" className='img5'/>
+        </div>
+        
         <div className='footer'>
           
 
@@ -39,12 +73,6 @@ function Landingpg() {
                 </div>
               </form>
 
-              <div className='title2'>
-                <h2>About</h2>
-                <h2>contact</h2>
-                
-           
-              </div>
 
 
 
