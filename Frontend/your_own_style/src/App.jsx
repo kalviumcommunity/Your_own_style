@@ -5,11 +5,10 @@ import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Forms from './components/Forms';
-import Signup from './components/Signup';
 import Top from './components/top';
 import Modal from './components/Modal';
 import Occasion from './components/Occasion';
-import Landingpg from './components/Landingpg';
+import Signup from './components/Signup';
 
 
 
@@ -34,7 +33,7 @@ function App() {
 
     //   </Routes>
     // </Router>
-    <Landingpg/>
+    <Signup/>
   );
 }
 
