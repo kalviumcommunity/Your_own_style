@@ -1,57 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
+
+import { useState } from 'react'
+// import { useNavigate,Link } from 'react-router-dom';
+import axios from 'axios';
+import Art from '../assets/Art.png'
+
 
 function Signup() {
-  const [action, setAction] = useState("Login");
-  const [showForm, setShowForm] = useState(false);
+  const [userName, setUserName] = useState(getCookie('username'))
+  const [password, setPassword] = useState(getCookie('password'))
+  // const navigate = useNavigate();
+  function getCookie(name) {
+    let cookieArray = document.cookie.split('; ');
+    let cookie = cookieArray.find((row) => row.startsWith(name + '='));
+    return cookie ? cookie.split('=')[1] : null;
+  }
+  function setCookie(name, value, daysToExpire) {
+    let date = new Date();
+    date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+  }
+  const submit = (e) => {
+    e.preventDefault();
+    axios.post('https://s51-ipl-team.onrender.com/login', {
+      name: userName,
+      password: password
+    }).then((response) => {
+      setCookie('token', response.data.accessToken, 365);
+      setCookie('username', userName, 365);
+    }).catch((error) => { console.error(error) });
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowForm(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  }
   return (
-    <div>
-      <div className='bgimg'>
-        <img src="https://wallpaperboat.com/wp-content/uploads/2019/11/boutique-11.jpg" alt="" />
-      </div>
-       
-      <h2 className={showForm ? 'wel show' : 'wel'}>WELCOME TO YOUR_OWN_STYLE</h2>
-      
-      {showForm && (
-        <div className='containers'>
-          <div className='header'>
-            <div className='text2'>{action}</div>
-            <div className='underline'>
-              <div className='inputs'>
-                <div className='input'>
-                  <img src="" alt="" />
-                  <input type="text" placeholder='Name'/>
-                </div>
-                <div className='input'>
-                  <img src="" alt="" />
-                  <input type="email" placeholder='Email Id' />
-                </div>
-                <div className='input'>
-                  <img src="" alt="" />
-                  <input type="password" placeholder='password' />
-                </div>
-                <div className='forgotpassword'>Lost password?<span>Click Here!</span></div>
-                <div className='submit-container'>
-                  <Link to="/home" className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign up") }}>Sign up</Link>
-                  <Link to="/home" className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login") }}>Login</Link>
-                </div>
-              </div>
+    <>
+      <div id='signin_container'>
+
+        <div id='form_bar'>
+          <div className='welcome'>
+            <h2>Welcome back 👋</h2>
+            <p className='para2'>Today is a new day. It's your day. You shape it. <br />
+              Sign in to have your own account</p>
+          </div>
+          <div id='Body-content'>
+            <div id='lform'>
+              <form onSubmit={submit}>
+                <div className='space-around'><label className='label1'>User Name  </label>
+                  <input type="text" onChange={(e) => { setUserName(e.target.value) }} id='password' /></div>
+                <div className='space-around'><label>Password : </label>
+                  <input type="password" name="password" id="password" onChange={(e) => { setPassword(e.target.value) }} /></div>
+                  <button type="submit" className="login-button">Sign In</button>
+
+              </form>
+              {/* <Link to='/signup'>SignUp</Link> */}
             </div>
           </div>
         </div>
-      )}
-    </div>
-  );
+        <div>
+          <img src={Art} alt="" className='art' />
+        </div>
+      </div>
+    </>
+  )
+
 }
 
 export default Signup;
