@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import Vector from '../assets/Vector.png'
 import contact from '../assets/contact.png'
+import '../App.css'
 
 function Navbar() {
   return (
@@ -18,7 +20,7 @@ function Navbar() {
           <li>Kids</li>
           <li>Accessories</li>
           <li>Collections</li>
-          <li>Sale</li>
+          <Link to="/Signup">Sign In</Link>
         </ul>
         <img src={Vector} alt="Logo" className="vector" />
         <img src={contact} alt="" />
