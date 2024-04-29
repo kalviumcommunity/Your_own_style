@@ -120,5 +120,6 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* Adjust as needed */
+  position: relative;
+  top: 50px; /* Adjust as needed */
 }
