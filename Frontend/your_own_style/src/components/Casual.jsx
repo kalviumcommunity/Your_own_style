@@ -2,24 +2,18 @@
 
 import React from 'react';
 import Navbar from './Navbar';
-import './Home.css';
 
 
-
-
-
-
-function Home() {
+function Casual() {
   return (
       <>
       <Navbar />
       <div className='div'>
-        
+        <h2>hi</h2>
       </div>
       </>
-
     
   );
 }
 
-export default Home;
+export default Casual;
