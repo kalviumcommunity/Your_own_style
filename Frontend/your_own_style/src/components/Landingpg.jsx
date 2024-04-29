@@ -32,10 +32,24 @@ function Landingpg() {
       </div>
 
       <div className='images'>
-        <img src={casual3} alt="" className='img1' />
-        <img src={casualimage2} alt="" className='img4' />
-        <img src={occasion} alt="" className='img2' />
-        <img src={redsaree} alt="" className='img3' />
+        <div className='image-container'>
+          <Link to="/casual">
+            <img src={casual3} alt="" className='img1' />
+          </Link>
+          <p className='image-label'>Casual Wear</p>
+        </div>
+        <div className='image-container'>
+          <img src={casualimage2} alt="" className='img4' />
+          <p className='image-label'>Party Wear</p>
+        </div>
+        <div className='image-container'>
+          <img src={occasion} alt="" className='img2' />
+          <p className='image-label'>Office Wear</p>
+        </div>
+        <div className='image-container'>
+          <img src={redsaree} alt="" className='img3' />
+          <p className='image-label'>Wedding Wear</p>
+        </div>
       </div>
 
       <div>
