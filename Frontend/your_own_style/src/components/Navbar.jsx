@@ -23,7 +23,7 @@ function Navbar() {
           <Link to="/Signup">Sign In</Link>
         </ul>
         <img src={Vector} alt="Logo" className="vector" />
-        <img src={contact} alt="" />
+        <img src={contact} alt=""  />
       </div>
     </nav>
   );
