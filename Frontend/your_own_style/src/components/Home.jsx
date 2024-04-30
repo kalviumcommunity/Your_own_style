@@ -37,9 +37,14 @@ function Home() {
       
       <div>
         <h1 className='title2'>Discover and <br />Find your own Fashion!</h1>
-      </div>     
+
+        <Link to="/home" className="shop-now">Shop Now</Link>
+      </div>  
+         
       <img src={green} alt="" className='image' />
+       
     </div>
+    
    
   
     </div>
