@@ -2,24 +2,19 @@
 
 import React from 'react';
 import Navbar from './Navbar';
-import green from '../assets/green.png';
-
-
+import casualimage1 from '../assets/casualimage1.png';
+import casualimg from '../assets/casualimg.jpg';
 
 function Casual() {
   return (
-      <>
+    <>
       <Navbar />
-      
       <div className='div'>
-        <img src={green} alt="" className='img1' />
-        <div>
-          <h1 className='title2'>Discover and <br />Find your own Fashion!</h1>
-        </div>     
+        <img src={casualimage1} alt="Collar" className='collar-top' />
+        <p className='texts'>Sleeveless Jumpsuit</p>
+        <img src={casualimg} alt="" className='collar-top2' />
       </div>
-     
-      </>
-    
+    </>
   );
 }
 

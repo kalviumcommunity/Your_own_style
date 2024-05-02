@@ -2,7 +2,7 @@
 import './Home.css';
 import React from 'react';
 import Navbar from './Navbar';
-import green from '../assets/green.png';
+import jo from '../assets/jo.png';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import Vector from '../assets/Vector.png'
@@ -37,9 +37,16 @@ function Home() {
       
       <div>
         <h1 className='title2'>Discover and <br />Find your own Fashion!</h1>
-      </div>     
-      <img src={green} alt="" className='image' />
+        <h2 className='title3'>Explore our curated collection of stylish <br /> clothings are tailored to you <br />unique taste</h2>
+
+        <Link to="/home" className="shop-now">Shop Now</Link>
+      </div>  
+         
+      <img src={jo} alt="" className='image' />
+       
     </div>
+    
+    
    
   
     </div>

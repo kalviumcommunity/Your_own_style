@@ -1,5 +1,5 @@
 .whole{
-    background-color: lightgreen;
+    background-color: rgb(249, 210, 138);
 }
 
 .div{
@@ -12,4 +12,55 @@
 .image{
     height: 500px;
     width: 300px;
+    margin-right: 150px;
+}
+.shop-now{
+    background-color:  #ED6E4C;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    top: 50px; 
+    margin-left: 300px;
+    box-shadow: 0 10px 15px -3px rgb(16, 16, 16);
+    /* margin-right: 80vh;  */
+}
+.title2{
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    margin-bottom: 80px;
+   
+}
+.title3{
+    margin-left: 300px;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.collar-top{
+    height: 60vh;
+    width: 20vw;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+/* In your CSS file (e.g., Landing.css) */
+.top{
+    margin-left: 300px;
+}
+.texts{
+    font-size: 20px;
+    font-weight: bold;
+}
+.collar-top2{
+    height: 60vh;
+    width: 20vw;
+    margin-left: 30px;
+    border-radius: 30px;
+    margin-top: 300px;
 }
