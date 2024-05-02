@@ -2,24 +2,19 @@
 
 import React from 'react';
 import Navbar from './Navbar';
-import green from '../assets/green.png';
-
-
+import collar from '../assets/collar.jpeg';
 
 function Casual() {
   return (
-      <>
+    <>
       <Navbar />
-      
       <div className='div'>
-        <img src={green} alt="" className='img1' />
-        <div>
-          <h1 className='title2'>Discover and <br />Find your own Fashion!</h1>
-        </div>     
+        <img src={collar} alt="Collar" className='collar-top' />
+        <div className="text-below-image">
+          <p className='top'>Regular Fit Long Sleeve Top</p>
+        </div>
       </div>
-     
-      </>
-    
+    </>
   );
 }
 
