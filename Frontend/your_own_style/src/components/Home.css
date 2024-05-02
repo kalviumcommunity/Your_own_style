@@ -53,4 +53,14 @@
 .top{
     margin-left: 300px;
 }
-  
+.texts{
+    font-size: 20px;
+    font-weight: bold;
+}
+.collar-top2{
+    height: 60vh;
+    width: 20vw;
+    margin-left: 30px;
+    border-radius: 30px;
+    margin-top: 300px;
+}
