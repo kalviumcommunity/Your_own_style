@@ -17,3 +17,4 @@ startDatabase()
     console.log('Server started running on port 3000 🏃‍♂️')
 })
 })
+
