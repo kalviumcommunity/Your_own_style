@@ -74,8 +74,16 @@ function Landingpg() {
             <button type="submit" className="btn btn-primary">
               <img src={Frame} alt="" className='arrow' />
             </button>
+            
           </div>
         </form>
+        <div className='foot'>
+              <h2 className='f1'>Contact</h2>
+              <h2 className='f2'>About us</h2>
+              <h2 className='f3'>Feedback</h2>
+              <h2></h2>
+            </div>
+           
       </div>
     </>
   );
