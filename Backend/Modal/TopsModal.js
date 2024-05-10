@@ -16,4 +16,4 @@ const TopsSchema = new mongoose.Schema({
     // timestamps means used to declare when it is created and when it is last updated
     timestamps:true
 })
-module.exports = mongoose.Model("Tops",TopsSchema)
+module.exports = mongoose.model("Tops",TopsSchema)
