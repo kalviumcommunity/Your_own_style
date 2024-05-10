@@ -78,11 +78,11 @@ function Landingpg() {
           </div>
         </form>
         <div className='foot'>
-              <h2 className='f1'>Contact</h2>
-              <h2 className='f2'>About us</h2>
-              <h2 className='f3'>Feedback</h2>
-              <h2></h2>
-            </div>
+            <h2 className='f1'>Contact</h2>
+            <h2 className='f2'>About us</h2>
+            <h2 className='f3'>Feedback</h2>
+            <h2></h2>
+        </div>
            
       </div>
     </>
