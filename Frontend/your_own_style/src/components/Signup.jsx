@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link, useNavigate } from 'react-router-dom'; // Import Link from React Router
 import axios from 'axios';
 import Art from '../assets/Art.png';
 
@@ -7,6 +7,14 @@ function Signup() {
   const [userName, setUserName] = useState(getCookie('username'));
   const [password, setPassword] = useState(getCookie('password'));
   const [success, setSuccess] = useState(false);
+
+  const handleUsernameChange= (e) =>{
+    setUserName(e.target.value);
+  }
+  const handlePasswordChange=(e)=>{
+    setPassword(e.target.value);
+  }
+  const navigate = useNavigate();
 
   function getCookie(name) {
     let cookieArray = document.cookie.split('; ');
@@ -53,7 +61,7 @@ function Signup() {
           <div id='Body-content'>
             <div id='lform'>
               <form onSubmit={submit}>
-                <div className='space-around'><label className='label1'>User Name  </label>
+                <div className='space-around'><label className='label1'>Username  </label>
                   <input type="text" onChange={(e) => { setUserName(e.target.value) }} id='password' /></div>
                 <div className='space-around'><label>Password : </label>
                   <input type="password" name="password" id="password" onChange={(e) => { setPassword(e.target.value) }} /></div>
