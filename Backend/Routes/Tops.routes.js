@@ -1,12 +1,10 @@
 const express = require('express')
-const getRouter = express.Router();
-const postRouter = express.Router();
-const putRouter = express.Router();
+const topRouter = express.Router();
 const jwt = require('jsonwebtoken')
-const deleteRouter = express.Router();
 const tops = require("../Modal/TopsModal")
 const Joi = require('joi');
 require('dotenv').config()
+
 const schema = Joi.object({
     CATEGORIES:Joi.string().required(),
     NAME:Joi.string().required(),
@@ -28,7 +26,7 @@ const schema = Joi.object({
           next()
         })
       }
-getRouter.get('/api/getalltops',authenticateToken,async (req, res) => {
+topRouter.get('/api/getalltops',authenticateToken,async (req, res) => {
     try{
         const top = await tops.find();
         res.status(200).json(top);
@@ -43,7 +41,7 @@ getRouter.get('/api/getalltops',authenticateToken,async (req, res) => {
 
 getRouter.get('/api/gettop/:id',authenticateToken,async (req, res) => {
     try{
-        const top = await tops.findone({Id:req.params.id});
+        const top = await tops.findone({_id:req.params._id});
         res.status(200).json(top);
     } catch(err){
         console.log(err);
@@ -57,7 +55,7 @@ getRouter.get('/api/gettop/:id',authenticateToken,async (req, res) => {
 
 
 
-postRouter.post('/api/addtop',authenticateToken,async (req, res) => {
+topRouter.post('/api/addtop',authenticateToken,async (req, res) => {
 
           
             const { error, value } = schema.validate(req.body, { abortEarly: false });
@@ -65,8 +63,8 @@ postRouter.post('/api/addtop',authenticateToken,async (req, res) => {
 
             try{
                 if (!error) {
-                let{Id,Teams,Ranking,M,W,L,T,NR,PT,NRR,For,Against,OwnedBy} = req.body;
-                const top = await trops.create({Id,Teams,Ranking,M,W,L,T,NR,PT,NRR,For,Against,OwnedBy});
+                let{CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6} = req.body;
+                const top = await tops.create({CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6});
                 res.status(201).json(top);}
                 else {
                     return res.status(400).send({
@@ -84,15 +82,14 @@ postRouter.post('/api/addtop',authenticateToken,async (req, res) => {
         
 })
 
-putRouter.patch('/api/updatetop/:id',authenticateToken,async (req, res) => {
+topRouter.patch('/api/updatetop/:id',authenticateToken,async (req, res) => {
     const { error, value } = schema.validate(req.body, { abortEarly: false });
           
     try {
         if (!error) {
-        const {id} = req.params;
-        const filter ={"Id":Number(id)}
-        let{Id,Teams,Ranking,M,W,L,T,NR,PT,NRR,For,Against,OwnedBy} = req.body;
-        const top = await trops.findOneAndUpdate(filter,{Id,Teams,Ranking,M,W,L,T,NR,PT,NRR,For,Against,OwnedBy});
+        const {_id} = req.params;
+        let{CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6} = req.body;
+        const top = await tops.findOneAndUpdate({_id:_id},{CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6});
         res.status(200).json(top);}
         else {
             return res.status(400).send({
@@ -109,11 +106,10 @@ putRouter.patch('/api/updatetop/:id',authenticateToken,async (req, res) => {
 
 })
 
-deleteRouter.delete('/api/deletetop/:id',authenticateToken,async (req, res) => {
+topRouter.delete('/api/deletetop/:id',authenticateToken,async (req, res) => {
     try {
-        const {id} = req.params;
-        const filter ={"Id":Number(id)}
-        const top = await trops.findOneAndDelete(filter);
+        const {_id} = req.params;
+        const top = await tops.findOneAndDelete({_id:_id});
         res.status(200).json(top);
     }catch(err){
         console.log(err);
@@ -123,4 +119,4 @@ deleteRouter.delete('/api/deletetop/:id',authenticateToken,async (req, res) => {
     }
 })
 
-module.exports = {getRouter, postRouter, deleteRouter, putRouter}
+module.exports = {topRouter}
