@@ -26,7 +26,7 @@ const schema = Joi.object({
           next()
         })
       }
-topRouter.get('/api/getalltops',authenticateToken,async (req, res) => {
+topRouter.get('/api/getalltops',async (req, res) => {
     try{
         const top = await tops.find();
         res.status(200).json(top);
@@ -39,7 +39,7 @@ topRouter.get('/api/getalltops',authenticateToken,async (req, res) => {
 })
 
 
-getRouter.get('/api/gettop/:id',authenticateToken,async (req, res) => {
+topRouter.get('/api/gettop/:id',authenticateToken,async (req, res) => {
     try{
         const top = await tops.findone({_id:req.params._id});
         res.status(200).json(top);
