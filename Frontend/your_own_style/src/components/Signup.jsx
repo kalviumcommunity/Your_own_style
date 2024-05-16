@@ -30,16 +30,11 @@ function Signup() {
 
   const submit = (e) => {
     e.preventDefault();
-    axios.post('https://s51-ipl-team.onrender.com/login', {
-      name: userName,
-      password: password
-    }).then((response) => {
-      setCookie('token', response.data.accessToken, 365);
+      // setCookie('token',accessToken, 365);
       setCookie('username', userName, 365);
+      setCookie('password', password, 365);
       setSuccess(true);
-    }).catch((error) => { 
-      console.error(error);
-    });
+
   }
 
   return (
@@ -51,6 +46,7 @@ function Signup() {
               <h2>Welcome back 👋</h2>
               <p className='para2'>Today is a new day. It's your day. You shape it. <br />
                 Sign in to have your own account</p>
+                <p>Got it</p>
             </div>
           ) : (
             <div className='welcome'>
@@ -62,10 +58,10 @@ function Signup() {
             <div id='lform'>
               <form onSubmit={submit}>
                 <div className='space-around'><label className='label1'>Username  </label>
-                  <input type="text" onChange={(e) => { setUserName(e.target.value) }} id='password' /></div>
+                  <input type="text" onChange={handleUsernameChange} id='password' /></div>
                 <div className='space-around'><label>Password : </label>
-                  <input type="password" name="password" id="password" onChange={(e) => { setPassword(e.target.value) }} /></div>
-                  {!success && <Link className='login-button' to="/">Sign In</Link>}
+                  <input type="password" name="password" id="password" onChange={handlePasswordChange} /></div>
+                  {!success && <Link to="/"> <button  className='login-button' onClick={submit}>Sign In</button></Link>}
               </form>
             </div>
           </div>
