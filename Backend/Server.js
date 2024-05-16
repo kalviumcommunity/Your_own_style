@@ -1,9 +1,8 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser') 
-
+const {topRouter} = require('./Routes/Tops.routes')
 const {startDatabase,isConnected} = require('./config/connection')
-const {getRouter, postRouter, deleteRouter, putRouter} = require('./Routes/Tops.routes')
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
@@ -11,15 +10,19 @@ app.use(express.json())
 app.get("/",(req,res) =>{
     res.send("Hello world");
 });
-app.use(getRouter)
-app.use(postRouter)
-app.use(deleteRouter)
-app.use(putRouter)
+app.use(topRouter)
+app.get('/', (req, res) => {
+  res.send({message:'Welcome to the amazing world of Journal'})
+})
 app.get('/home', (req, res) => {
-    res.json({
-      message: isConnected() ? 'Database is connected' : 'Disconnected from database'
-    })
-    })
+  res.json({
+    message: isConnected() ? 'Database is connected' : 'Disconnected from database'
+  })
+  })
+app.get('/ping',(req,res)=>{
+    res.send({message:'pong!, Welcome to the amazing world of Journaling'})
+})
+
 startDatabase()
 .then(()=>{
   app.listen(3000,async()=>{
