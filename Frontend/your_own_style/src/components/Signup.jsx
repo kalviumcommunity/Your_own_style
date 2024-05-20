@@ -66,9 +66,7 @@ function Signup() {
             </div>
           </div>
         </div>
-        <div>
-          <img src={Art} alt="" className='art' />
-        </div>
+     
       </div>
     </>
   );
