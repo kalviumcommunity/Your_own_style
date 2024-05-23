@@ -60,7 +60,7 @@ function Landingpg() {
 
       <div className='footer'>
         <div className='title'>
-          <h2>Brand</h2>
+          
           <h3 className='h3'>Subscribe to our newsletter</h3>
           <p className='p tag'>Your_own_style is a tailoring website <br />created specially for you  </p>
         </div>
