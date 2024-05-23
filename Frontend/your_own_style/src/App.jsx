@@ -7,6 +7,7 @@ import Signup from './components/Signup';
 import Home from './components/Home';
 import Casual from './components/Casual'
 import Tops from './components/Tops';
+import Sample from './components/Sample';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/Home' element={<Home/>}></Route>
           <Route path='/Casual' element={<Casual/>}></Route>
           <Route path='/Tops' element={<Tops/>}></Route>
+          <Route path='/sample' element={<Sample/>}></Route>
         </Routes>
       </BrowserRouter>
     
