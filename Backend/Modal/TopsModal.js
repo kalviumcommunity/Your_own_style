@@ -11,6 +11,7 @@ const TopsSchema = new mongoose.Schema({
     SIZE_4:{type: String, required:true},
     SIZE_5:{type: String, required:true},
     SIZE_6:{type: String, required:true},
+    COLOR:{type: String, required:true},
 
 },{
     // timestamps means used to declare when it is created and when it is last updated
