@@ -16,6 +16,7 @@ const schema = Joi.object({
     SIZE_4:Joi.string().required(),
     SIZE_5:Joi.string().required(),
     SIZE_6:Joi.string().required(),
+    COLOR:Joi.string().required(),
     });
     const authenticateToken = (req, res, next) => {
         const authHeader = req.headers['authorization'];
@@ -26,6 +27,10 @@ const schema = Joi.object({
           next()
         })
       }
+
+      // Express.js code uses the GET method. Specifically, there are two routes that use the GET method:
+      // GET /api/getalltops: This route retrieves all the tops from the database.
+      // GET /api/gettop/:id: This route retrieves a specific top by its ID, and it requires authentication.
 topRouter.get('/api/getalltops',async (req, res) => {
     try{
         const top = await tops.find();

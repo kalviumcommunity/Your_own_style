@@ -1,0 +1,143 @@
+.tops-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .top-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 300px;
+  }
+  .top-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .top-category,
+  .top-rating,
+  .top-size1,
+  .top-size2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .top-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  /* Container for the tops */
+.tops-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 20px 20px 20px; /* Adjust padding for fixed navbar */
+    gap: 20px;
+  }
+  /* Individual top item styles */
+.top-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .top-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .top-name {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #343a40;
+  }
+  
+  .top-category,
+  .top-rating,
+  .top-size {
+    font-size: 16px;
+    color: #6c757d;
+  }
+  .top-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .tops-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual top item */
+  .top-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+  }
+
+  /* Top name */
+.top-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Top category */
+  .top-category, .top-rating, .top-size {
+    margin: 5px 0;
+  }
+  /* Image styling to make all images the same size */
+.top-image {
+    width: 100%; /* Set a responsive width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+  }
+  .navigation-arrow.left {
+    left: 10px;
+  }
+  
+  .navigation-arrow.right {
+    right: 10px;
+  }
+  .navigation-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .size-option {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .size-option.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+.size-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
