@@ -15,9 +15,6 @@ function TopItem({ item, index }) {
 
   const [currentSizeIndex, setCurrentSizeIndex] = useState(0);
 
- 
-
-
   const handleSizeClick = (index) => {
     setCurrentSizeIndex(index);
   };
@@ -53,7 +50,7 @@ function Tops() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/getalltops');
+        const response = await axios.get('https://your-own-style.onrender.com/api/getalltops');
         setData(response.data);
       } catch (error) {
         console.error(error);

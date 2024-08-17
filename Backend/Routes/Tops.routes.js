@@ -62,18 +62,18 @@ topRouter.get('/api/gettop/:id',authenticateToken,async (req, res) => {
 
 topRouter.post('/api/addtop',authenticateToken,async (req, res) => {
 
-          
-            const { error, value } = schema.validate(req.body, { abortEarly: false });
+          // to add a new top by sending information to the address /api/addtop. The authenticateToken part makes sure that the person sending the information is allowed to do so (like checking their ID).
+            const { error, value } = schema.validate(req.body, { abortEarly: false }); // The code then checks if the information sent about the top is correct. It uses schema.validate(req.body, { abortEarly: false }); to see if all the details are right, like the top's category, name, images, rating, and sizes.
           
 
-            try{
+            try{  //  If the information is correct (if (!error)), it takes the details about the top from the request (req.body) and saves them into a new top object.
                 if (!error) {
                 let{CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6} = req.body;
                 const top = await tops.create({CATEGORIES,NAME,IMAGES,RATING,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6});
                 res.status(201).json(top);}
                 else {
                     return res.status(400).send({
-                        message: `Bad request, error:${error}`
+                        message: `Bad request, error:${error}` // If there's any error while adding the item, the server logs the error and sends a response indicating an internal server error.
                     })
                     console.error(error)
                 }
