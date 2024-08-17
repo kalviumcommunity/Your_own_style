@@ -1,5 +1,6 @@
 import * as React from "react";
 
+
 export default function Sample() {
   return (
     <div className="flex flex-col pb-20 bg-white">

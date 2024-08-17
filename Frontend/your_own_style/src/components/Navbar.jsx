@@ -12,13 +12,12 @@ function Navbar() {
       <div className="navbar-container">
         <img src={logo} alt="Logo" className="logo" />
         <ul className="nav-menu">
-          <li>New</li>
-          <li>Tops</li>
-          <li>Bottoms</li>
-          <li>Kids</li>
-          <li>Accessories</li>
-          <li>Collections</li>
-          <Link to="/Signup">Sign In</Link>
+          
+          <Link to="/Signup" className='in'>Sign In</Link>
+          <Link to="/Aboutus" className='in2'>About us</Link>
+          <Link to="/Contactus" className='in3'>Contact us</Link>
+          <Link to="/Consultdesigner" className='in4'>Contact Designer</Link>
+         
         </ul>
         
       </div>

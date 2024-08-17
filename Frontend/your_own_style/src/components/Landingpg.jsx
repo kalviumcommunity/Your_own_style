@@ -24,7 +24,7 @@ function Landingpg() {
         <img src={raymond} alt="Raymond" className="brand-logo" />
       </div>
 
-      <div className='para'>
+      <div className='para1'>
         <p>
           Your_own_style, is a tailoring platform designed to cater to your unique fashion <br />With an array of brands like Fabindia, Siyaram, and Raymond, along with a <br />diverse selection of clothing options for various occasions, it offers personalized <br />style solutions.  Subscribe to the newsletter for the latest updates and trends.
         </p>
