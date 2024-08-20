@@ -1,10 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './CartItems.css';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
 
 const CartItems = () => {
     const { getTotalCartAmount, cartItems, removeFromCart, all_product } = useContext(ShopContext);
+    const [showPopup, setShowPopup] = useState(false); // State for managing the popup visibility
+
+    const handleCheckout = () => {
+        setShowPopup(true);
+        // Additional checkout logic can go here
+    };
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
 
     return (
         <div className='cartitems'>
@@ -54,16 +64,20 @@ const CartItems = () => {
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
                     </div>
-                    <button>PROCEED TO CHECKOUT</button>
-                </div>
-                <div className="cartitems-promocode">
-                    <p>If you have a promo code, Enter it here</p>
-                    <div className="cartitems-promobox">
-                        <input type="text" placeholder="promo code" />
-                        <button>Submit</button>
-                    </div>
+                    <button onClick={handleCheckout}>PROCEED TO CHECKOUT</button>
                 </div>
             </div>
+
+            {/* Popup for order confirmation */}
+            {showPopup && (
+                <div className="popup-overlay">
+                    <div className="popup">
+                        <h2>Order Confirmed</h2>
+                        <p>Thank you for shopping with us!</p>
+                        <button onClick={closePopup}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
